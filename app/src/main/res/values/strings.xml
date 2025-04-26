@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">My Money Notes</string>
+    <string name="add_transaction">Add Transaction</string>
+    <string name="add_transaction1">Add Transaction</string>
+    <string name="income">Income</string>
+    <string name="expense">Expense</string>
+    <string name="amount">Amount</string>
+    <string name="category">Category</string>
+    <string name="add_transaction_button">Add Transaction</string>
+    <string name="amount_input_desc">Enter transaction amount</string>
+    <string name="category_input_desc">Enter transaction category</string>
+    <string name="transaction_added">Transaction added successfully</string>
+    <string name="select_transaction_type">Please select transaction type</string>
+    <string name="amount_required">Amount is required</string>
+    <string name="category_required">Category is required</string>
+    <string name="invalid_amount">Please enter a valid amount</string>
+</resources>
