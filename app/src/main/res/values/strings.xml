@@ -14,4 +14,6 @@
     <string name="amount_required">Amount is required</string>
     <string name="category_required">Category is required</string>
     <string name="invalid_amount">Please enter a valid amount</string>
+    <string name="balance">Balance: $0.00</string>
+    <string name="balance_format">Balance: %1$s</string>
 </resources>

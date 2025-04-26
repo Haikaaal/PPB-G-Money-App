@@ -7,7 +7,7 @@ data class Transaction(
     val id: String = UUID.randomUUID().toString(),
     val type: TransactionType,
     val amount: Double,
-    val category: String,
+    var category: String,
     val date: Date = Date(),
     val note: String = ""
 )
