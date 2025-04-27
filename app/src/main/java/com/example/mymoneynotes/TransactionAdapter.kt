@@ -32,23 +32,17 @@ class TransactionAdapter(
 
     override fun onBindViewHolder(holder: TransactionViewHolder, position: Int) {
         val tx = transactions[position]
-
-        // ➜ Display category as plain text
         holder.categoryText.text = tx.category
+        holder.dateText.text     = dateFormat.format(tx.date)
 
-        // ➜ Date
-        holder.dateText.text = dateFormat.format(tx.date)
-
-        // ➜ Amount with +/-
-        val formattedAmount = if (tx.type == TransactionType.INCOME) {
+        val formattedAmount = if (tx.type == TransactionType.INCOME)
             "+${currencyFormat.format(tx.amount)}"
-        } else {
+        else
             "-${currencyFormat.format(tx.amount)}"
-        }
-        holder.amountText.text = formattedAmount
-        holder.typeText.text = tx.type.name
 
-        // ➜ Coloring
+        holder.amountText.text = formattedAmount
+        holder.typeText.text   = tx.type.name
+
         val colorRes = if (tx.type == TransactionType.INCOME)
             R.color.income_color else R.color.expense_color
         val color = ContextCompat.getColor(holder.itemView.context, colorRes)
